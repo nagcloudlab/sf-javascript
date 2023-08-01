@@ -1,0 +1,48 @@
+
+
+static UI  => data + style 
+dynamic UI => data + style + interactivity
+
+--------------------------------------------------
+
+web UI
+
+static web UI  => HTML + CSS
+dynamic web UI => HTML + CSS + javascript
+
+
+------------------------------------------------------
+
+
+
+
+
+How javascript program(s) executes within browser ?
+---------------------------------------------------
+
+
+
+  javascript is
+
+    -> single-threaded process
+    -> all IO operations are non-blocking / async
+
+
+browser
+-----------
+
+    e.g chrome
+
+    1. Javascript runtime : based on Ecmascript spec  ( v8 )
+
+        - single-call-stack  : function-execution happen in this memory
+        - heap               : to keep objects
+
+    2. browser APIs  ( DOM, XHR , Timer ,..)  :     based on w3c  spec
+
+    3. Event Queue
+
+    4. Event-Loop
+
+
+------------------------------------------------------------------------------
