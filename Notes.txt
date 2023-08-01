@@ -1,0 +1,148 @@
+
+
+why javascript is best ?
+
+-> flexibility with dynamic typing
+-> good support functional-programming  
+
+-> io operations by default asynchronous / non-blocking
+-> single-threaded process 
+
+how to run javascript program(s) ?
+
+    -> javascript-interpreter/engine/runtime
+
+browser environment
+    - Chrome    ( v8 )
+    - Firefox   ( rhino / spidermonkey )
+    - IE / Edge ( chakra )
+    - Safari    ( nitro )
+
+other environment
+
+    - Node.js   ( v8 )
+    - JVM       ( rhino / nashorn)
+
+
+Javascript topics :
+
+level-1:
+    - data-types
+    - execution-context a.k.a scopes
+    - functional-programming concepts
+    - 'this' keyword
+    - data-structures ( array , set , map )
+level-2:
+    - ES6 & ES7 features
+level-3:
+    - asynchronous-programming
+        - promises
+        - observables-streams
+    - unit-testing    
+    - How javascript executes behind the scenes ( browser | Node.js)
+
+- https://javascript.info/
+- https://exploringjs.com/es6/index.html
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+
+-----------------------------------------------------------------------------------------
+
+
+UI => data + style + behavior
+Web-UI => HTML + CSS + javascript
+
+
+----------------------------------------------------------------------------------------
+
+
+why do we need javascript with HTML pages?
+
+
+=> using browser's APIs, 
+   javascript-programs can do any dynamic-activity.
+
+browser APIs => w3c recommendations
+
+e.g DOM,Timer,XHR/Fetch, ...
+
+using DOM API
+-----------------
+-> to change element's inner content
+-> to change element's attributes/properties
+-> to change element's style
+-> to listen event(s) on elements
+
+using XHR/Fetch API
+------------------
+-> to make async HTTP request(s)
+
+using Timer API
+----------------
+-> to execue any action on timeout/time-interval
+
+
+---------------------------------------------------------
+
+
+we have challenges while working with browser's APIs 
+using plain-javascript ( our-code)
+
+
+-> brower compatability issues
+-> memory issues (i.e un-wanted DOM elements must removed )
+-> performance issues ( i,e accessing DOM elements in minimal way)
+-> too much code 
+-> code oraganisation is not good
+-> no code-reusability
+
+
+Solution(s)
+
+=> using third-party's javascript libraries and frameworks
+
+1. jquery ( DOM & XHR utility library )
+
+
+MVC pattern based javascript library & frameworks
+
+2. Backbone.js
+3. Knockout.js
+4. Ember.js
+5. DOJO
+6. Ext.js from sencha ( commercial )
+7. Angular.js from google-team
+..
+
+
+Component pattern based frameworks
+
+1. React.js from facebook
+2. Angular from google-team ( foucus )
+3. Vue.js
+..
+
+--------------------------------------------------------
+
+---------------------------------------------------------
+
+Web UI developer must know following things
+
+-> HTML element(s)
+-> Styling HTML element(s) with CSS
+-> Javascript programming concepts
+-> How to work browser's APIs ( DOM, Timer , XHR/Fetch )
++
+-> UI library | framework ( React.js , Angular, Vue.js )
+
+--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+

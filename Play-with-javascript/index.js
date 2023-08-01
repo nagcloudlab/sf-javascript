@@ -1,30 +1,36 @@
-// Function Closure
 
-// why / where need closures in our code?
+"use strict"
 
-// to encapsulate data / behavior from outside access
+function func() {
+  console.log(this);
+}
 
-// module : counter
-// count
-// increment
-// getCount
 
-// global-scope
+func() // scope owned by 'undefined
 
-const counter = (function () {
-  let count = 0; // private
-  function increment() {
-    count++;
+let o1 = { name: "A" }
+o1.func = func
+
+o1.func() // scope owned by 'o1'
+
+let o2 = { name: "B" }
+Object.preventExtensions(o2) // no extension
+
+func.call(o2) // scope owned by 'o2'
+
+//----------------------------------------------------------------
+let trainer = {
+  name: "John",
+  doTeach: function () {
+    console.log(this);
+    function learn() {
+      console.log(this);
+    }
+    return learn
   }
-  function getCount() {
-    return count;
-  }
-  return {
-    inc: increment,
-    get: getCount,
-  };
-})();
+}
+const doLearn = trainer.doTeach() // scope owned by 'trainer'
+const e = { name: "Emp" }
+doLearn.call(e) // scope owned by 'e'
 
-// self executable functions
-// IIFE (Immediately Invoked Function Expression)
-// Module Pattern
+//------------------------------
