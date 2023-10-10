@@ -29,11 +29,11 @@ Javascript topics :
 level-1:
     - data-types
     - execution-context a.k.a scopes
-    - functional-programming concepts
-    - 'this' keyword
+    - functions
+    - 'this' keyword / function-binding
     - data-structures ( array , set , map )
 level-2:
-    - ES6 & ES7 features
+    - ES6 & ES7, Next.. features
 level-3:
     - asynchronous-programming
         - promises
